@@ -115,6 +115,7 @@ set wrapscan
 " Color
 set t_Co=256
 colorscheme hybrid
+set background=dark
 
 " 移動を直感的に
 set whichwrap=b,s,h,l,<,>,[,]
@@ -263,6 +264,7 @@ autocmd FileType javascript    setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python        setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml           setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby          setlocal omnifunc=rubycomplete#CompleteTags
+autocmd VimEnter * execute 'NERDTree'
 
 " Indent Guides
 let g:indent_guides_auto_colors = 0
